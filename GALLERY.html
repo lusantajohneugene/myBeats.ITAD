@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>LUSANTA - Photo Gallery</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #f7f8fc 0%, #e8ecf7 100%);
+  font-family: Tahoma, sans-serif;
+  color: #2f3e46;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 14pt;
+  color: #7b8ab8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 11pt;
+  color: #2f3e46;
+}
+
+/* PAGE TITLE */
+.page-title {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Georgia, serif;
+  font-size: 24pt;
+  color: #7b8ab8;
+}
+
+/* CATEGORY */
+.category {
+  margin: 50px auto;
+  text-align: center;
+  max-width: 900px;
+}
+
+.category h2 {
+  font-family: Georgia, serif;
+  color: #7b8ab8;
+  margin-bottom: 25px;
+}
+
+/* GALLERY */
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+.category-nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(123,138,184,0.12);
+  color: #264157;
+  font-size: 12pt;
+}
+.category-nav a:hover { background: rgba(123,138,184,0.2); }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  align-items: start;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 260px;
+  box-shadow: 0 6px 18px rgba(95,108,175,0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 16px 35px rgba(95,108,175,0.14); }
+
+.category-header {
+  font-family: Georgia, serif;
+  color: #7b8ab8;
+  margin: 30px 0 18px;
+  text-align: left;
+}
+
+/* (Removed lightbox styles — images open in target window) */
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">My IT Journey</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="BIOGRAPHY.html">Biography</a></li>
+    <li><a href="BLOG-1.html">Blog</a></li>
+    <li><a href="MUSIC.html">Music</a></li>
+    <li><a href="GALLERY.html">Gallery</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<h1 class="page-title">Photo Gallery</h1>
+
+<div class="category-nav">
+  <a href="#pets">Pets</a>
+  <a href="#family">Family & Friends</a>
+  <a href="#myself">Myself</a>
+</div>
+
+<section id="pets" class="category">
+  <h2 class="category-header">Cute Pets</h2>
+  <div class="gallery-grid">
+    <div class="card"><a class="thumb" href="IMAGES/PETS/pet1.jpg" target="winImage"><img src="IMAGES/PETS/pet1.jpg" alt="Kiro my big baby like a tiger laying down on my chess." title="A big cat laying down on chest. He's always waiting for me to come back from school just to take a nap on my chest."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/PETS/pet2.jpg" target="winImage"><img src="IMAGES/PETS/pet2.jpg" alt="He's always want to be with me." title="He knocked my door just to take the whole side of the bed."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/PETS/pet3.jpg" target="winImage"><img src="IMAGES/PETS/pet3.jpg" alt="This is sakura, my first cute cat, a small one." title="She is small but the super kulit one, she always want to play with me."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/PETS/pet4.jpg" target="winImage"><img src="IMAGES/PETS/pet4.jpg" alt="This is my adopted cat." title="My adopted cat, a very sweet, calm, and she doesn't care about what is happening around her."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/PETS/pet5.jpg" target="winImage"><img src="IMAGES/PETS/pet5.jpg" alt="My go to living creature." title="He's my go to person, i feel like when I'm down He always want to make me comfort Him, makes think like what is this mean."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/PETS/pet6.jpg" target="winImage"><img src="IMAGES/PETS/pet6.jpg" alt="The tiger and the cat." title="Kiro and his first look a like baby cat"></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/PETS/pet7.jpg" target="winImage"><img src="IMAGES/PETS/pet7.jpg" alt="The only one" title="She's cora my one and only dog."></a></div>
+  </div>
+</section> 
+
+<section id="family" class="category">
+  <h2 class="category-header">Special Moments — Family & Friends</h2>
+  <div class="gallery-grid">
+    <div class="card"><a class="thumb" href="IMAGES/FAMILY/fam1.jpg" target="winImage"><img src="IMAGES/FAMILY/fam1.jpg" alt="My circle of friend outiside the school." title="My circle of friends outside the school."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/FAMILY/fam2.jpg" target="winImage"><img src="IMAGES/FAMILY/fam2.jpg" alt="My brother for life" title="We've been traveling together since we were just a grade 7 schooler, so that is my brother for life."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/FAMILY/fam3.jpg" target="winImage"><img src="IMAGES/FAMILY/fam3.jpg" alt="My sweet and happy family" title="My sweet and happy family. My father is going back abroad."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/FAMILY/fam4.jpg" target="winImage"><img src="IMAGES/FAMILY/fam4.jpg" alt="Baptist" title="All of the members became ninong and ninang."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/FAMILY/fam5.jpg" target="winImage"><img src="IMAGES/FAMILY/fam5.jpg" alt="Friends when it comes food" title="We went fusion alley to try different food.(wala kaming nagustuhan)"></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/FAMILY/fam6.jpg" target="winImage"><img src="IMAGES/FAMILY/fam6.jpg" alt="New Years Eve" title="New Year's Eve with my family."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/FAMILY/fam7.jpg" target="winImage"><img src="IMAGES/FAMILY/fam7.jpg" alt="Whole street" title="Whole street of my family."></a></div>
+  </div>
+</section>
+
+<section id="myself" class="category">
+  <h2 class="category-header">Me — Random Moments</h2>
+  <div class="gallery-grid">
+    <div class="card"><a class="thumb" href="IMAGES/MYSELF/me1.jpg" target="winImage"><img src="IMAGES/MYSELF/me1.jpg" alt="New glasses" title="I got new glasses, and I look like a gangster."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/MYSELF/me2.jpg" target="winImage"><img src="IMAGES/MYSELF/me2.jpg" alt="I got bored in troubleshooting my own pc." title="I got bored in troubleshooting my own pc."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/MYSELF/me3.jpg" target="winImage"><img src="IMAGES/MYSELF/me3.jpg" alt="I watched UAAP in Moa Arena" title="I watched UAAP in Moa Arena."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/MYSELF/me4.jpg" target="winImage"><img src="IMAGES/MYSELF/me4.jpg" alt="New shades" title="New shades I got."></a></div>
+    <div class="card"><a class="thumb" href="IMAGES/MYSELF/me5.jpg" target="winImage"><img src="IMAGES/MYSELF/me5.jpg" alt="NSTP, we distrubute foods for the elder people and children." title="NSTP, we distribute foods for the elder people and children."></a></div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Music Space</title>
+
+<style>
+
+body {
+    background: linear-gradient(135deg, #f7f8fc 0%, #e8ecf7 100%);
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    color: #2f3e46;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 14pt;
+    color: #7b8ab8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 11pt;
+    color: #2f3e46;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #7b8ab8;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover { color: #7b8ab8; }
+.nav-links a:hover::after { width: 100%; }
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #6c7bb0;
+    
+}
+
+/* SECTION */
+.section {
+    padding: 60px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    color: #6c7bb0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* MUSIC GRID */
+.music-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(108,123,176,0.25);
+}
+
+.song-title {
+    font-weight: bold;
+}
+
+.song-artist {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.card:hover .song-title {
+    color: #6c7bb0;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card .cover {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">My IT Journey</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="BIOGRAPHY.html">Biography</a></li>
+        <li><a href="BLOG-1.html">Blog</a></li>
+        <li><a href="MUSIC.html">Music</a></li>
+        <li><a href="GALLERY.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- TITLE -->
+<div class="hero">
+    <h1>🎧 My Music Playlist</h1>
+</div>
+
+<!-- SZA SECTION -->
+<div class="section">
+    <h2>SZA</h2>
+    <div class="music-grid">
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/killBill.jpg" alt="Kill Bill cover">
+            <div class="song-title">Kill Bill</div>
+            <div class="song-artist">SZA</div>
+            <audio controls>
+                <source src="MP3/bill.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/snooze.jpg" alt="Snooze cover">
+            <div class="song-title">Snooze</div>
+            <div class="song-artist">SZA</div>
+            <audio controls>
+                <source src="MP3/snooz.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/loveGalore.jpg" alt="Love Galore cover">
+            <div class="song-title">Love Galore</div>
+            <div class="song-artist">SZA ft. Travis Scott</div>
+            <audio controls>
+                <source src="MP3/galore.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/weekEnds.jpg" alt="The Weekend cover">
+            <div class="song-title">The Weekend</div>
+            <div class="song-artist">SZA</div>
+            <audio controls>
+                <source src="MP3/theWeekend.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+</div>
+
+<!-- CHRIS BROWN SECTION -->
+<div class="section">
+    <h2>Chris Brown</h2>
+    <div class="music-grid">
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/underTheInfluence.jpg" alt="Under The Influence cover">
+            <div class="song-title">Under The Influence</div>
+            <div class="song-artist">Chris Brown</div>
+            <audio controls>
+                <source src="MP3/underInfluence.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/noGuidance.jpg" alt="No Guidance cover">
+            <div class="song-title">No Guidance</div>
+            <div class="song-artist">Chris Brown ft. Drake</div>
+            <audio controls>
+                <source src="MP3/noGuidance.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/withYou.jpg" alt="With You cover">
+            <div class="song-title">With You</div>
+            <div class="song-artist">Chris Brown</div>
+            <audio controls>
+                <source src="MP3/withuu.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/lookAtMeNow.jpg" alt="Look At Me Now cover">
+            <div class="song-title">Look At Me Now</div>
+            <div class="song-artist">Chris Brown ft. Lil Wayne & Busta Rhymes</div>
+            <audio controls>
+                <source src="MP3/lookatmenow.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+</div>
+
+<!-- COMFORT MUSIC SECTION -->
+<div class="section">
+    <h2>🌙 My "Go to" music</h2>
+    <div class="music-grid">
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/lauraPalmer.jpg" alt="Laura Palmer's Theme cover">
+            <div class="song-title">Laura Palmer's Theme</div>
+            <div class="song-artist">Angelo Badalamenti</div>
+            <audio controls>
+                <source src="MP3/laura.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/marriedLife.jpg" alt="Married Life cover">
+            <div class="song-title">Married Life</div>
+            <div class="song-artist">Michael Giacchino</div>
+            <audio controls>
+                <source src="MP3/marriedLife.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/stuffWeDid.jpg" alt="Stuff We Did cover">
+            <div class="song-title">Stuff We Did</div>
+            <div class="song-artist">Michael Giacchino</div>
+            <audio controls>
+                <source src="MP3/stuffweDid.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/melodyOfMemories.jpg" alt="Melody of Memories cover">
+            <div class="song-title">Melody of Memories</div>
+            <div class="song-artist">Joel Sunny</div>
+            <audio controls>
+                <source src="MP3/melodyOfMemories.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/uhmmm.jpg" alt="Je te laisserai des mots cover">
+            <div class="song-title">Je te laisserai des mots</div>
+            <div class="song-artist">Patrick Watson</div>
+            <audio controls>
+                <source src="MP3/je te lai.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <img class="cover" src="IMAGES/musicCover/willywonka.jpg" alt="Pure Imagination cover">
+            <div class="song-title">Pure Imagination</div>
+            <div class="song-artist">Timothée Chalamet</div>
+            <audio controls>
+                <source src="MP3/wonka.MP3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
